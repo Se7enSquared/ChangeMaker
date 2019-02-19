@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="code.css">
+    </link>
+    <title>
+        Help the Cashier
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Help the cashier return the right Change</h1>
+
+        <form onsubmit="return false;">
+            <label for="amount">Amount Owed: </label>
+            <input type="text" id="amount" name="amount" class="amountinputs">
+            <label for="paid">Amount Paid: </label>
+            <input type="text" id="paid" name="paid" class="amountinputs">
+            <button id="okbutton">OK</button>
+            <p id="footnote">(format must be in dollars & cents with no $ symbol (9.99 or 12.74))</p>
+        </form>
+        <h1 id="due">Change Due: </h1> <br>
+        <div id='notes'></div>
+    </div>        
+
+        <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
